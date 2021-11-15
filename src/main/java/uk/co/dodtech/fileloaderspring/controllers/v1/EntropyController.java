@@ -36,9 +36,4 @@ public class EntropyController {
         entropyService.uploadEntropy(uploadFile);
     }
 
-    //@PostMapping
-    //@ResponseStatus(HttpStatus.CREATED)
-    //public boolean checkCredentials(@RequestBody user) throws IOException {
-    //  return entropyService.checkCredentials(uploadFile);
-    //}
 }

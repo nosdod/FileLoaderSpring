@@ -80,7 +80,7 @@ public class EntropyControllerTest {
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.filename", equalTo(FILENAME)))
-                //.andExpect(jsonPath("$.bytecount", equalTo(BYTECOUNT)))
+                .andExpect(jsonPath("$.bytecount", equalTo(BYTECOUNT)))
                 .andExpect(jsonPath("$.status", equalTo(EntropyService.STATUS_CRITICAL)));
     }
 

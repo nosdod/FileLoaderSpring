@@ -1,0 +1,8 @@
+package uk.co.dodtech.fileloaderspring.domain;
+
+import lombok.Data;
+
+@Data
+public class Whoami {
+    private String whoami;
+}

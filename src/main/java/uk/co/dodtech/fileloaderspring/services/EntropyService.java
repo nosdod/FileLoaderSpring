@@ -16,6 +16,4 @@ public interface EntropyService {
 
     EntropyDTO getEntropyStatus();
     void uploadEntropy(MultipartFile uploadFile) throws IOException;
-    //boolean checkCredentials( String usertype, String username, String password );
-
 }
