@@ -41,6 +41,6 @@ public class WhoamiControllerTest extends TestCase {
             mockMvc.perform(get(WhoamiController.BASE_URL)
                             .contentType(MediaType.APPLICATION_JSON))
                     .andExpect(status().isOk())
-                    .andExpect(jsonPath("$", equalTo(expectedResponse)));
+                    .andExpect(jsonPath("$.message", equalTo(expectedResponse)));
     }
 }

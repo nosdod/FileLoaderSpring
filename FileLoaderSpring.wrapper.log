@@ -1,0 +1,80 @@
+2021-11-16 10:34:11,270 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:34:12,310 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:34:12,971 INFO  - Installing the service with id 'FileLoaderSpring'
+2021-11-16 10:34:13,005 DEBUG - Completed. Exit code is 0
+2021-11-16 10:34:26,019 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:34:27,093 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:34:27,795 INFO  - Starting the service with id 'FileLoaderSpring'
+2021-11-16 10:34:27,954 DEBUG - Starting WinSW in the service mode
+2021-11-16 10:34:27,979 DEBUG - Completed. Exit code is 0
+2021-11-16 10:34:27,988 INFO  - Starting java -Xmx256m -jar "C:\Users\markd\IdeaProjects\FileLoaderSpring\FileLoaderSpring-*.jar"
+2021-11-16 10:34:28,017 INFO  - Started process 10728
+2021-11-16 10:34:28,027 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2021-11-16 10:35:56,036 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:35:56,607 DEBUG - User requested the status of the process with id 'FileLoaderSpring'
+2021-11-16 10:35:56,610 DEBUG - Completed. Exit code is 0
+2021-11-16 10:36:02,808 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:36:03,918 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:36:04,604 INFO  - Starting the service with id 'FileLoaderSpring'
+2021-11-16 10:36:04,782 DEBUG - Starting WinSW in the service mode
+2021-11-16 10:36:04,806 DEBUG - Completed. Exit code is 0
+2021-11-16 10:36:04,815 INFO  - Starting java -Xmx256m -jar "C:\Users\markd\IdeaProjects\FileLoaderSpring\FileLoaderSpring-*.jar"
+2021-11-16 10:36:04,838 INFO  - Started process 4108
+2021-11-16 10:36:04,851 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2021-11-16 10:36:08,000 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:36:08,595 DEBUG - User requested the status of the process with id 'FileLoaderSpring'
+2021-11-16 10:36:08,598 DEBUG - Completed. Exit code is 0
+2021-11-16 10:36:53,241 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:36:54,347 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:36:55,051 INFO  - Uninstalling the service with id 'FileLoaderSpring'
+2021-11-16 10:36:55,061 DEBUG - Completed. Exit code is 0
+2021-11-16 10:37:37,908 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:37:39,034 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:37:39,656 INFO  - Installing the service with id 'FileLoaderSpring'
+2021-11-16 10:37:39,688 DEBUG - Completed. Exit code is 0
+2021-11-16 10:37:44,086 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:37:45,107 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:37:45,756 INFO  - Starting the service with id 'FileLoaderSpring'
+2021-11-16 10:37:45,943 DEBUG - Starting WinSW in the service mode
+2021-11-16 10:37:45,966 DEBUG - Completed. Exit code is 0
+2021-11-16 10:37:45,972 INFO  - Starting java -Xmx256m -jar "C:\Users\markd\IdeaProjects\FileLoaderSpring\FileLoaderSpring-0.0.1-SNAPSHOT.jar"
+2021-11-16 10:37:46,027 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2021-11-16 10:37:49,337 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:37:49,907 DEBUG - User requested the status of the process with id 'FileLoaderSpring'
+2021-11-16 10:37:49,910 DEBUG - Completed. Exit code is 0
+2021-11-16 10:39:01,724 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:39:02,853 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:39:03,529 INFO  - Uninstalling the service with id 'FileLoaderSpring'
+2021-11-16 10:39:03,542 DEBUG - Completed. Exit code is 0
+2021-11-16 10:39:07,105 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:39:08,135 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:39:08,792 INFO  - Installing the service with id 'FileLoaderSpring'
+2021-11-16 10:39:08,831 DEBUG - Completed. Exit code is 0
+2021-11-16 10:39:12,534 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:39:13,555 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:39:14,289 INFO  - Starting the service with id 'FileLoaderSpring'
+2021-11-16 10:39:14,487 DEBUG - Starting WinSW in the service mode
+2021-11-16 10:39:14,515 DEBUG - Completed. Exit code is 0
+2021-11-16 10:39:14,523 INFO  - Starting java -Xmx256m -jar "C:\Users\markd\IdeaProjects\FileLoaderSpring\target\FileLoaderSpring-*.jar"
+2021-11-16 10:39:14,576 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2021-11-16 10:39:17,478 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:39:18,052 DEBUG - User requested the status of the process with id 'FileLoaderSpring'
+2021-11-16 10:39:18,054 DEBUG - Completed. Exit code is 0
+2021-11-16 10:39:51,371 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:39:52,531 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:39:53,258 INFO  - Uninstalling the service with id 'FileLoaderSpring'
+2021-11-16 10:39:53,277 DEBUG - Completed. Exit code is 0
+2021-11-16 10:39:56,307 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:39:57,313 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:39:57,951 INFO  - Installing the service with id 'FileLoaderSpring'
+2021-11-16 10:39:57,980 DEBUG - Completed. Exit code is 0
+2021-11-16 10:40:00,705 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:40:01,771 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:40:02,419 INFO  - Starting the service with id 'FileLoaderSpring'
+2021-11-16 10:40:02,583 DEBUG - Starting WinSW in the service mode
+2021-11-16 10:40:02,602 DEBUG - Completed. Exit code is 0
+2021-11-16 10:40:02,649 INFO  - Started process 3872
+2021-11-16 10:40:02,660 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2021-11-16 10:40:05,493 DEBUG - Starting WinSW in the CLI mode
+2021-11-16 10:40:06,509 DEBUG - User requested the status of the process with id 'FileLoaderSpring'
+2021-11-16 10:40:06,513 DEBUG - Completed. Exit code is 0

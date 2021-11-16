@@ -17,3 +17,25 @@ POST /api/v1/entropy which accepts a POST body containing a file. The given file
 POST /api/v1/credentials checks for valid credentials.
 
 GET /swagger_ui.html Swagger UI for all available endpoints
+
+## To build the Application
+./mvnw clean package
+
+## Windows service wrapper
+To run the built jar file as a windows service, see
+https://www.baeldung.com/spring-boot-app-as-a-service
+
+Here we are using the configured 'winsw' (https://github.com/kohsuke/winsw) option described.
+
+./FileLoaderSpring.exe install
+./FileLoaderSpring.exe start
+You can also use
+./FileLoaderSpring.exe stop to stop the service
+./FileLoaderSpring.exe uninstall to remove the service
+
+## Environment setup
+The default configuration assumes C:/UploadDir/entropy.dat for the file. 
+This will be created if it doesn't exist when the application starts up.
+
+To create example files to try out the upload functionality, you can use, for example 
+fsutil file createNew entropy_20MB.dat 20000000
