@@ -2,8 +2,9 @@
     <id>FileLoaderSpring</id>
     <name>FileLoaderSpring</name>
     <description>This runs the File Loader as a Service.</description>
-    <env name="FILELOADERSPRING_HOME" value="%BASE%\service_logs"/>
+    <env name="FILELOADERSPRING_HOME" value="%BASE%"/>
     <executable>java</executable>
     <arguments>-Xmx256m -jar "%BASE%\target\FileLoaderSpring-0.0.1-SNAPSHOT.jar"</arguments>
+    <logpath>%BASE%\service_logs</logpath>
     <logmode>rotate</logmode>
 </service>
