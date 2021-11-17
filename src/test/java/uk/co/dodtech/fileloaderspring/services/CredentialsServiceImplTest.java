@@ -2,23 +2,12 @@ package uk.co.dodtech.fileloaderspring.services;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.mock.web.MockMultipartFile;
-import uk.co.dodtech.fileloaderspring.api.v1.mapper.EntropyMapper;
 import uk.co.dodtech.fileloaderspring.api.v1.model.CredentialsDTO;
-import uk.co.dodtech.fileloaderspring.domain.Credentials;
-import uk.co.dodtech.fileloaderspring.domain.Entropy;
-import uk.co.dodtech.fileloaderspring.repositories.EntropyRepository;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Locale;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.when;
 
 public class CredentialsServiceImplTest {
     private final String SM_USER_TYPE = "SM";
