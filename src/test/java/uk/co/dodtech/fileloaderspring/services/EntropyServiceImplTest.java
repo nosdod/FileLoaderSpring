@@ -1,9 +1,8 @@
 package uk.co.dodtech.fileloaderspring.services;
 
-import uk.co.dodtech.fileloaderspring.api.v1.mapper.EntropyMapper;
+import org.springframework.test.context.ContextConfiguration;
 import uk.co.dodtech.fileloaderspring.api.v1.model.EntropyDTO;
 import uk.co.dodtech.fileloaderspring.domain.Entropy;
-import uk.co.dodtech.fileloaderspring.repositories.EntropyRepository;
 import org.springframework.mock.web.MockMultipartFile;
 import org.junit.After;
 import org.junit.Before;
@@ -11,16 +10,15 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 public class EntropyServiceImplTest {
 
+    public static final Long CRITICAL_SIZE_LIMIT = 5000L;
+    public static final Long WARNING_SIZE_LIMIT = 100000L;
     public static final Long BYTECOUNT = 2L;
     public static final String FILENAME = "entropy.epy";
     public static final String ENTROPY_8KB = "entropy_8KB.dat";
@@ -30,14 +28,11 @@ public class EntropyServiceImplTest {
     EntropyService entropyService;
     File testFile;
 
-    @Mock
-    EntropyRepository entropyRepository;
-
     @Before
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
 
-        entropyService = new EntropyServiceImpl(EntropyMapper.INSTANCE,entropyRepository);
+        entropyService = new EntropyServiceImpl(CRITICAL_SIZE_LIMIT,WARNING_SIZE_LIMIT,FILENAME);
 
         testFile = new File(FILENAME);
         testFile.createNewFile();
@@ -61,8 +56,6 @@ public class EntropyServiceImplTest {
         Entropy entropy = new Entropy();
         entropy.setFilename(FILENAME);
 
-        when(entropyRepository.findById(1L)).thenReturn(java.util.Optional.of(entropy));
-
         //when
         EntropyDTO entropyDTO = entropyService.getEntropyStatus();
 
@@ -74,13 +67,6 @@ public class EntropyServiceImplTest {
 
     @Test
     public void uploadEntropy() throws Exception {
-        Entropy entropy = new Entropy();
-        entropy.setFilename(FILENAME);
-
-        when(entropyRepository.findById(1L)).thenReturn(java.util.Optional.of(entropy));
-
-        Long fileSize = 0L;
-
         ClassLoader classLoader = getClass().getClassLoader();
         File newEntropy = new File(classLoader.getResource(ENTROPY_20MB).getFile());
 

@@ -1,9 +1,8 @@
 package uk.co.dodtech.fileloaderspring.bootstrap;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import uk.co.dodtech.fileloaderspring.domain.Entropy;
-import uk.co.dodtech.fileloaderspring.repositories.EntropyRepository;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -11,11 +10,10 @@ import java.nio.file.Path;
 
 @Component
 public class Bootstrap implements CommandLineRunner {
-    private EntropyRepository entropyRepository;
-    private static String DEFAULT_ENTROPY_FILE = "C:/UploadDir/entropy.dat";
+    private String entropyFilePath;
 
-    public Bootstrap(EntropyRepository entropyRepository) {
-        this.entropyRepository = entropyRepository;
+    public Bootstrap(@Value("${entropyFilePath}") String entropyFilePath) {
+        this.entropyFilePath = entropyFilePath;
     }
 
     @Override
@@ -24,10 +22,7 @@ public class Bootstrap implements CommandLineRunner {
     }
 
     private void loadEntropy() {
-        Entropy entropy = new Entropy();
-        entropy.setFilename(DEFAULT_ENTROPY_FILE);
-
-        Path directory = new File(entropy.getFilename()).toPath().getParent();
+        Path directory = new File(entropyFilePath).toPath().getParent();
 
         // Check the server has been setup correctly
         boolean directoryExists = Files.exists(directory);
@@ -41,7 +36,7 @@ public class Bootstrap implements CommandLineRunner {
             }
         }
 
-        Path entropyFile = new File(entropy.getFilename()).toPath();
+        Path entropyFile = new File(entropyFilePath).toPath();
 
         boolean fileExists = Files.exists(entropyFile);
 
@@ -54,8 +49,6 @@ public class Bootstrap implements CommandLineRunner {
             }
         }
 
-        entropyRepository.save(entropy);
-
-        System.out.println("Entropy Data Loaded = " + entropyRepository.count() );
+        System.out.println("Entropy Data Checks complete");
     }
 }

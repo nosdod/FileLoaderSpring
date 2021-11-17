@@ -8,8 +8,6 @@ import java.io.IOException;
 
 @Service
 public interface EntropyService {
-    static final Long criticalSizeLimit = 5000L;
-    static final Long warningSizeLimit = 20000L;
     static final String STATUS_CRITICAL = "CRITICAL";
     static final String STATUS_WARNING = "WARNING";
     static final String STATUS_NORMAL = "NORMAL";
