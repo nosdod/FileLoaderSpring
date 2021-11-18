@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/nosdod/FileLoaderSpring/tree/main.svg?style=svg)](https://circleci.com/gh/nosdod/FileLoaderSpring/tree/main)
 # FileLoaderSpring
 
 A File Loader Spring5 boot application.
