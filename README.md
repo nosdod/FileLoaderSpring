@@ -18,6 +18,12 @@ POST /api/v1/credentials checks for valid credentials.
 
 GET /swagger_ui.html Swagger UI for all available endpoints
 
+## UI Integration
+The ReactUIConcept is now included in this repository (See src/main/ui). Maven will build this 
+along with the server and include it in the jar. 
+
+Open a browser at http://localhost:8080 to get the UI.
+
 ## To build the Application
 ./mvnw clean package
 
