@@ -3,18 +3,14 @@ package uk.co.dodtech.fileloaderspring.controllers.v1;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 import uk.co.dodtech.fileloaderspring.api.v1.model.CredentialsDTO;
 import uk.co.dodtech.fileloaderspring.services.CredentialsService;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 
 @Api(value = "Credentials Checker")
 @CrossOrigin(origins = "*")
