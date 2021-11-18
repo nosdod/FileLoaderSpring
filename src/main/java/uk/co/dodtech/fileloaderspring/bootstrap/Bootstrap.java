@@ -1,10 +1,8 @@
 package uk.co.dodtech.fileloaderspring.bootstrap;
 
-import org.apache.catalina.core.ApplicationContext;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import uk.co.dodtech.fileloaderspring.services.EntropyService;
 
 import java.io.File;
 import java.nio.file.Files;
