@@ -1,19 +1,16 @@
 package uk.co.dodtech.fileloaderspring.services;
 
-import org.springframework.test.context.ContextConfiguration;
 import uk.co.dodtech.fileloaderspring.api.v1.model.EntropyDTO;
 import uk.co.dodtech.fileloaderspring.domain.Entropy;
 import org.springframework.mock.web.MockMultipartFile;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import java.io.*;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.*;
 
 public class EntropyServiceImplTest {
 

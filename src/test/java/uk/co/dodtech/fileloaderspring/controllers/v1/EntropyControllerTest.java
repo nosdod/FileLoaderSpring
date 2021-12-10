@@ -92,8 +92,6 @@ public class EntropyControllerTest {
 
         when(entropyService.getEntropyStatus()).thenReturn(entropyDTO);
 
-        Long fileSize = 0L;
-
         ClassLoader classLoader = getClass().getClassLoader();
         File newEntropy = new File(classLoader.getResource(ENTROPY_20MB).getFile());
 

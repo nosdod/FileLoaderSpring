@@ -8,11 +8,6 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import uk.co.dodtech.fileloaderspring.controllers.RestResponseEntityExceptionHandler;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
